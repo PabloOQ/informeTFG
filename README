@@ -1,1 +1,9 @@
-Initial commit
+Los cambios realizados se encuentran en el fork de GitHub de PabloOQ.
+Debido a un problema de compatibilidad durante el desarrollo hubo que hacer un merge de la rama master de Bitwarden, todo el código se encuentra en:
+https://github.com/PabloOQ/mobile/tree/stick-after-merge
+Sin embargo, para visualizar rápidamente el código modificado antes de hacer el merge, se podría ver en esta rama (aunque este está también en la rama mencionada anteriormente):
+https://github.com/PabloOQ/mobile/tree/stick
+Finalmente en este enlace se muestra el código añadido, al ser el total no incluye el código previo a las refactorizaciones.
+https://github.com/PabloOQ/mobile/compare/tfg-diff...PabloOQ:mobile:stick-after-merge
+El informe escrito en LaTeX se encuentra en:
+https://github.com/PabloOQ/informeTFG
