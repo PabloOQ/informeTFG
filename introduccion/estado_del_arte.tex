@@ -1,0 +1,100 @@
+\subsubsection{Administradores de contraseñas}
+\begin{itemize}
+    \item 1Password
+    \begin{itemize}
+        \item En la nube
+        \item Propietario
+        \item Suscripción de pago
+        \item Seguridad: \cite{1passencryption}
+        \begin{itemize}
+            \item \textit{Zero knowledge encryption}
+            \item \gls{pbkdf}2-\gls{hmac}-\gls{sha}256
+            \item \gls{srp}
+        \end{itemize}
+    \end{itemize}
+
+    \item Bitwarden
+        \begin{itemize}
+            \item En la nube
+            \item Open source
+            \item Suscripción \gls{freemium} con alternativa \textit{self-host}
+            \item Seguridad: \cite{bitencryption}
+            \begin{itemize}
+                \item \textit{Zero knowledge encryption}
+                \item \gls{e2ee} \gls{aes}256
+                \item \textit{Salted hashing}
+                \item \gls{pbkdf}2 \gls{sha}256
+            \end{itemize}
+        \end{itemize}
+
+    \item KeePass
+    \begin{itemize}
+        \item Local
+        \item Open source. KeePassXC es una implementación de KeePass en C++.
+        \item Gratuito
+        \item Seguridad: \cite{keepencription}
+        \begin{itemize}
+            \item \textit{Zero knowledge encryption}
+            \item \gls{aes}256
+            \item Chacha20
+            \item \gls{sha}256
+        \end{itemize}
+    \end{itemize}
+
+    \item LastPass
+    \begin{itemize}
+        \item En la nube
+        \item Propietario
+        \item \Gls{freemium}
+        \item Seguridad: \cite{lastencryption}
+        \begin{itemize}
+            \item \textit{Zero knowledge encryption}
+            \item \gls{aes}256
+            \item \textit{Salted hashing}
+            \item \gls{pbkdf}2 \gls{sha}256
+        \end{itemize}
+    \end{itemize}
+    \item Authorizer \cite{authorizer}
+    \begin{itemize}
+        \item Local
+        \item Open Source
+        \item Gratuito
+        \item Seguridad:
+        \item Autoescritura:
+        \begin{itemize}
+            \item Por \gls{usb}. Requiere una modificación del kernel de Android.
+            \item Por Bluetooth. El dispositivo objetivo necesita poder establecer una conexión Bluetooth directa.
+        \end{itemize}
+    \end{itemize}
+    
+\end{itemize}
+\subsubsection{Dispositivos de escritura automática}
+\begin{itemize}
+    \item Arduino:
+    Las placas arduino basadas en procesadores 32u4 o SAMD pueden usarse como dispositivo \gls{hid} \cite{arduinokeyboard}. Con esto resuelto el resto podría hacerse fácilmente, con un módulo de pantalla táctil y ser independiente o bien con un módulo Bluetooth y depender de otro dispositivo. Incluso con otro arduino que actúe como \textit{master} y una conexión \gls{usb} a otro dispositivo este podría dar las órdenes por el puerto serial. Esto de hecho era el primer planteamiento de este proyecto, sin embargo ni hace falta reinventar la rueda, ni parece una alternativa cómoda el llevar una placa encima, comparado con llevar un \quotes{pendrive} (InputStick no es un pendrive pero tiene la misma forma y tamaño) en el llavero.
+    \item Firmware:
+    Existen diversos lenguajes de firmware para teclados, con ellos se podría resolver la escritura automática:
+    \begin{itemize}
+        \item \gls{qmk} \cite{qmk}
+        \item KMK \cite{kmk}
+        \item Vial \cite{vial}
+        \item \gls{zmk} \cite{zmk}
+        \item VIA \cite{via}
+    \end{itemize}
+    La mayoría requieren placas basadas en procesadores 32u4 o SAMD, como las placas arduino.
+    \item InputStick
+    
+    \item Raspberry Pi Zero
+
+    \item Android:
+    
+    \begin{itemize}
+        \item Laa. Requiere Bluetooth o wifi. \cite{laa}
+        \item Android keyboard gadget. Funciona por \gls{usb}, requiere root ya que modifica el kernel de android. \cite{android-keyboard-gadget}. 
+            por usb, requiere root.
+        \item BLE HID over GATT Profile for Android. Requiere Bluetooth. \cite{BLE-HID-Peripheral-for-Android}
+    \end{itemize}
+\end{itemize}
+% scrapped, si bien estas opciones existen, distan bastante del trabajo por lo que no se va a comentar nada al respecto
+% - RubberDucky BashBunny
+% - logitech https://github.com/bilogic/logitech-unifying-device

@@ -1,0 +1,60 @@
+% glosario
+\newglossaryentry{vault}{name={bóveda},description={\textit{vault}. Donde Bitwarden almacena los credenciales de las distintas cuentas del usuario. Adicionalmente en este informe se usa indistintamente para referirse también a una cuenta de Bitwarden}}
+\newglossaryentry{cuenta}{name=cuenta,description={Cuando se hable de cuenta se habla de a lo que un \textit{\gls{login}} hace referencia, que principalmente suelen ser cuentas de servicios web. Cuando se refiera a una cuenta de Bitwarden se usará el término \gls{vault}}}
+\newglossaryentry{login}{name={elemento de cuenta},description={\textit{Login item}: Par de credenciales Usuario-Clave\cite{item}}}
+\newglossaryentry{freemium}{name=\textit{freemium},description={De \textit{free} y \textit{premium}. Que ofrece un servicio gratuito además de una opción de pago}}
+
+% acronimos y siglas
+% si provienen del inglés están en cursiva
+\newacronym{usb}{USB}{\textit{Universal Serial Bus}}
+\newacronym{hid}{HID}{\textit{Human Interface Device}}
+\newacronym{api}{API}{\textit{Application Programming Interface}}
+\newacronym{vpn}{VPN}{\textit{Virtual Private Network}}
+\newacronym{cli}{CLI}{\textit{Command Line Interface}}
+\newacronym{aes}{AES}{\textit{Advanced Encryption Standard}}
+\newacronym{sha}{SHA}{\textit{Secure Hash Algorithm}}
+\newacronym{e2ee}{E2EE}{\textit{End-to-end encryption}}
+\newacronym{url}{URL}{\textit{Uniform Resource Locator}}
+\newacronym{uri}{URI}{\textit{Uniform Resource Identifier}}
+\newacronym{totp}{TOTP}{\textit{Time-based One-time Password}}
+\newacronym{2fa}{2FA}{\textit{Two-factor Authentication}}
+\newacronym{hmac}{HMAC}{\textit{Hash-based Message Authenthication Code}}
+\newacronym{pnp}{PnP}{\textit{Plug and Play}}
+\newacronym{ble}{BLE}{\textit{Bluetooth Low Energy}}
+\newacronym{bios}{BIOS}{\textit{Basic Input/Output System}}
+\newacronym{pbkdf}{PBKDF}{\textit{Password-Based Key Derivation Function}}
+\newacronym{srp}{SRP}{\textit{Secure Remote Password}}
+\newacronym{qmk}{QMK}{\textit{Quantum Mechanical Keyboard}}
+\newacronym{zmk}{ZMK}{\textit{Zephyr Mechanical Keyboard}}
+\newacronym{mvvm}{MVVM}{\textit{Model-View-ViewModel}}
+\newacronym{mvc}{MVC}{\textit{Model-View-Controller}}
+\newacronym{mvp}{MVP}{\textit{Model-View-Presenter}}
+\newacronym{jbl}{JBL}{\textit{Java Bindings Library}}
+\newacronym{uml}{UML}{\textit{Unified Modeling Language}}
+\newacronym{gui}{GUI}{\textit{Graphical User Interface}}
+\newacronym{cryptomac}{MAC}{\textit{Message Authentication Code}}
+%\newacronym{addressmac}{MAC}{\textit{Media Access Control}}
+
+%-----------------------
+
+{
+    \hypersetup{linkcolor=black}
+    \tableofcontents
+    \newpage
+
+    % figuras
+    \listoffigures
+    \newpage
+
+    % tablas
+    \listoftables
+    \newpage
+}
+% glosario
+\printglossary
+\newpage
+
+% acrónimos
+\setacronymstyle{long-short}
+\printglossary[title={Siglas y acrónimos},type=\acronymtype,nonumberlist]
+%,title=Abreviaciones, toctitle=Índice de abreviaciones
